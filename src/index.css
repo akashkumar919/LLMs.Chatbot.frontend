@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+/*  This is for hiding scrollbar */
+
+/* Hide Scrollbar Everywhere */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE & Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+
+
+
+/* Animation for the 3-dots  */
+
+/* Popup animation */
+@keyframes popup {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Chat bubble fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.25s ease-out;
+}
+
+/* Typing dots */
+.dot {
+  width: 6px;
+  height: 6px;
+  background: #fffefe;
+  border-radius: 50%;
+  display: inline-block;
+ 
+}
